@@ -20,13 +20,6 @@ I work where multi-agent orchestration, retrieval, and messy real-world data col
 - 🎓 MSc Data Science, **University of Glasgow** — dissertation on fine-tuning LLMs to reason about legal judgments
 - 💬 Open to conversations about AI engineering, applied ML, and anything where data meets judgment
 
-## How I'm Wired
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/how-im-wired-dark.png">
-  <img alt="Architecture diagram: your query flows into a supervisor (hybrid router), which routes to agentic systems, retrieval and RAG, data engineering, and cloud and production — all passing through always-on guardrails before shipping." src="assets/how-im-wired-light.png">
-</picture>
-
 ## Featured Projects
 
 <table>
