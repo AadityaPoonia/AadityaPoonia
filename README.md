@@ -40,22 +40,17 @@ $ whoami --verbose
 Every visitor gets routed. You're in the graph right now.
 
 ```mermaid
-flowchart TD
-    Q([👋 your query]) --> S{{"🧭 SUPERVISOR<br/>hybrid router — rules first, LLM for the ambiguous"}}
-
-    S -->|"build me an agent"| A["🤖 Agentic Systems<br/><br/>LangGraph · LangChain · DSPy<br/>multi-agent routing · tool design"]
-    S -->|"ground it in my data"| R["📚 Retrieval & RAG<br/><br/>FAISS · reranking fusion · multimodal ingestion<br/>eval harnesses · citations · IDK policies"]
-    S -->|"make the data talk"| D["📊 Data Engineering & Analytics<br/><br/>Spark · BigQuery · SQL · pandas<br/>Looker Studio · Tableau · Altair"]
-    S -->|"will it survive prod?"| P["🚀 Production Muscle<br/><br/>AWS · GCP · Vertex AI<br/>Streamlit · MongoDB · Docker"]
-
-    A -.-> G
-    R -.-> G
-    D -.-> G
-    P -.-> G
-
-    G["🛡️ GUARDRAILS — always on<br/>prompt-injection defence · read-only SQL · AST-validated execution · tracing"]
-
-    G --> OUT([✅ something that works — and keeps working])
+flowchart LR
+    Q(["your query"]) --> S["supervisor<br/>hybrid router"]
+    S --> A["agentic systems<br/>LangGraph, DSPy"]
+    S --> R["retrieval and RAG<br/>FAISS, reranking, evals"]
+    S --> D["data engineering<br/>Spark, BigQuery, SQL"]
+    S --> P["cloud and production<br/>AWS, GCP, Vertex AI"]
+    A --> G["guardrails<br/>always on"]
+    R --> G
+    D --> G
+    P --> G
+    G --> W(["ships and keeps working"])
 ```
 
 ## Deployed Agents
