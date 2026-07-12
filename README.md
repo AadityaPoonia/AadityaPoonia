@@ -39,19 +39,10 @@ $ whoami --verbose
 
 Every visitor gets routed. You're in the graph right now.
 
-```mermaid
-flowchart LR
-    Q(["your query"]) --> S["supervisor<br/>hybrid router"]
-    S --> A["agentic systems<br/>LangGraph, DSPy"]
-    S --> R["retrieval and RAG<br/>FAISS, reranking, evals"]
-    S --> D["data engineering<br/>Spark, BigQuery, SQL"]
-    S --> P["cloud and production<br/>AWS, GCP, Vertex AI"]
-    A --> G["guardrails<br/>always on"]
-    R --> G
-    D --> G
-    P --> G
-    G --> W(["ships and keeps working"])
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/how-im-wired-dark.svg">
+  <img alt="Architecture diagram: your query flows into a supervisor (hybrid router), which routes to agentic systems, retrieval and RAG, data engineering, and cloud and production — all passing through always-on guardrails before shipping." src="assets/how-im-wired-light.svg">
+</picture>
 
 ## Deployed Agents
 
