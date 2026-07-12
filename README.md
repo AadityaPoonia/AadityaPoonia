@@ -40,8 +40,8 @@ $ whoami --verbose
 Every visitor gets routed. You're in the graph right now.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/how-im-wired-dark.svg">
-  <img alt="Architecture diagram: your query flows into a supervisor (hybrid router), which routes to agentic systems, retrieval and RAG, data engineering, and cloud and production — all passing through always-on guardrails before shipping." src="assets/how-im-wired-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/how-im-wired-dark.png">
+  <img alt="Architecture diagram: your query flows into a supervisor (hybrid router), which routes to agentic systems, retrieval and RAG, data engineering, and cloud and production — all passing through always-on guardrails before shipping." src="assets/how-im-wired-light.png">
 </picture>
 
 ## Deployed Agents
@@ -148,13 +148,6 @@ Degrades gracefully to fully-offline mode (TF-IDF + extractive answers) when no 
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
 ![Altair](https://img.shields.io/badge/Altair%20%2F%20Vega--Lite-3F4F75?style=flat-square&logo=plotly&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-
-## Telemetry
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=AadityaPoonia&show_icons=true&hide_border=true&title_color=0A66C2&icon_color=0A66C2&count_private=true" alt="GitHub stats"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AadityaPoonia&layout=compact&hide_border=true&title_color=0A66C2&langs_count=6" alt="Top languages"/>
-</p>
 
 ---
 
